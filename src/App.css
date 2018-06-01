@@ -1,11 +1,11 @@
 * {
   font-family: 'Quicksand', sans-serif;
+  background-color: #2e2d2d;
 }
-
 .App {
-  color: #eedc00;
+  color: #c5be91;
   text-align: center;
-  background-color:#2e2d2d;
+  
 }
 
 .App-logo {
@@ -14,15 +14,35 @@
 }
 
 .App-header {
-  position: relative;
+  position: static;
   width: 100%;
   height: 100vh;
-  color: #eedc00;
 }
 
-.App-title {
-  font-size: 30;
+.App-card {
+  position: relative;
+  top: 20vh;
+  left: 40vw;
+  width: 50vw;
+  border: 2px solid #c5be91; 
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+.name {
+  font-size: 70pt;
+  margin: 0%;
+}
+.slogen{
+  font-size: 20pt;
+  display: block;
+}
+.getInTouch{
+  border: 2px solid #c5be91; 
+  background-color: #c5be91;
+  font-size: 20pt;
+  margin-top: 30px;
+}
+
 
 .App-intro {
   font-size: large;
