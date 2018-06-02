@@ -4,8 +4,7 @@
 }
 .App {
   color: #c5be91;
-  text-align: center;
-  
+  height: 2000px;
 }
 
 .App-logo {
@@ -15,34 +14,55 @@
 
 .App-header {
   position: static;
-  width: 100%;
-  height: 100vh;
+  height: 0px;
 }
 
 .App-card {
-  position: relative;
-  top: 20vh;
-  left: 40vw;
-  width: 50vw;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  width: 50%;
   border: 2px solid #c5be91; 
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
+
+.sticky{
+  position: sticky;
+  top: 20%;
+  left: 45%;
+  width: 50%;
+  border: 2px solid #c5be91; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 .name {
   font-size: 70pt;
-  margin: 0%;
+  
 }
 .slogen{
   font-size: 20pt;
   display: block;
 }
+/* get in touch button */
 .getInTouch{
   border: 2px solid #c5be91; 
   background-color: #c5be91;
   font-size: 20pt;
   margin-top: 30px;
+  margin-bottom: 30px;
+/* animation */
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
+.getInTouch:hover{
+  box-shadow: 0 0px 50px 0 #c5be91;
+  font-size: 25pt;
+}
 
 .App-intro {
   font-size: large;
