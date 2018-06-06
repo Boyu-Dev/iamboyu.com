@@ -18,30 +18,33 @@
 }
 
 .App-card {
-  position: absolute;
-  top: 20%;
-  left: 45%;
+  position: relative;
+  top: 20vh;
+  left: 40vw;
   width: 50%;
   border: 2px solid #c5be91; 
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.App-cardSticky {
+  position: sticky;
+  top: 0;
+  left: 40vw;
+  width: 50%;
+  border: 2px solid #c5be91; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
-.sticky{
-  position: sticky;
-  top: 20%;
-  left: 45%;
-  width: 50%;
-  border: 2px solid #c5be91; 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
 
 .name {
   font-size: 70pt;
-  
 }
 .slogen{
   font-size: 20pt;
