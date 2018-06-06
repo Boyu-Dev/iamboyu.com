@@ -40,7 +40,14 @@ class App extends Component {
 
   }
   setNameStyle(){
-    return this.state.stickNav ? { size: '20pt'} : {size: '70pt'};
+    return this.state.stickNav ?  'nameSticky' : 'name' ;
+  }
+
+  setSlogenStyle(){
+    return this.state.stickNav ? 'slogenSticky' : 'slogen'; 
+  }
+  setContactButtonStyle(){
+    return this.state.stickNav ? 'getInTouchSticky' : 'getInTouch';
   }
 
   render() {
@@ -53,9 +60,9 @@ class App extends Component {
         </header>
 
         <div className={this.getNavBarStyle()} ref={ref=>this.navBar=ref}>
-          <span className="name">Bo Yu</span>
-          <span className="slogen">//Research //Innovate //Create</span>
-          <button className="getInTouch">GET IN TOUCH</button>
+          <span className={this.setNameStyle()}>Bo Yu</span>
+          <span className={this.setSlogenStyle()}>//Research //Innovate //Create</span>
+          <button className={this.setContactButtonStyle()}>GET IN TOUCH</button>
         </div>
 
         <p className="App-intro">  

@@ -20,7 +20,7 @@
 .App-card {
   position: relative;
   top: 20vh;
-  left: 40vw;
+  left: 45vw;
   width: 50%;
   border: 2px solid #c5be91; 
   padding-top: 10px;
@@ -32,24 +32,37 @@
 .App-cardSticky {
   position: sticky;
   top: 0;
-  left: 40vw;
-  width: 50%;
-  border: 2px solid #c5be91; 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
+  left: 0;
+  width: 100vw;
+  text-align: right;
+  background-color: #c5be91;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  
 }
 
 
 .name {
   font-size: 70pt;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
+.nameSticky{
+  background-color: #c5be91;
+  font-size: 0;
+}
+
 .slogen{
   font-size: 20pt;
   display: block;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
+.slogenSticky{
+  background-color: #c5be91;
+  font-size: 0pt;
+}
+
 /* get in touch button */
 .getInTouch{
   border: 2px solid #c5be91; 
@@ -61,11 +74,25 @@
   -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
-
 .getInTouch:hover{
   box-shadow: 0 0px 50px 0 #c5be91;
   font-size: 25pt;
 }
+
+.getInTouchSticky{
+  color: #c5be91;
+  border: 2px solid #c5be91; 
+  background-color: #2e2d2d;
+  font-size: 15pt;
+/* animation */
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.getInTouchSticky:hover{
+  box-shadow: inset 0 0 20px 5px #c5be91;
+}
+
 
 .App-intro {
   font-size: large;
