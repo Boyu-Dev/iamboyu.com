@@ -8,7 +8,6 @@ class App extends Component {
     super();
     this.state = {
       stickNav: false,
-      threshhold: Number.POSITIVE_INFINITY
     };
   }
 
@@ -19,6 +18,7 @@ class App extends Component {
     window.removeEventListener("scroll", this.handleWindowScroll);
   }
 
+  //scroll handlers
   handleWindowScroll = (e) => {
     if(!this.navBar){
       return;
@@ -28,7 +28,7 @@ class App extends Component {
 
     if (pageYOffset > 0 ){
       this.setState({stickNav: true})
-      console.log(pageYOffset);
+      //console.log(pageYOffset);
     }
     else{
       this.setState({stickNav: false})
@@ -44,11 +44,13 @@ class App extends Component {
   }
 
   setSlogenStyle(){
-    return this.state.stickNav ? 'slogenSticky' : 'slogen'; 
+    return this.state.stickNav ? 'slogenSticky' : 'slogenSticky alined'; 
   }
   setContactButtonStyle(){
     return this.state.stickNav ? 'getInTouchSticky' : 'getInTouch';
   }
+
+
 
   render() {
     return (
@@ -58,10 +60,38 @@ class App extends Component {
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
         
         </header>
+       
 
         <div className={this.getNavBarStyle()} ref={ref=>this.navBar=ref}>
-          <span className={this.setNameStyle()}>Bo Yu</span>
-          <span className={this.setSlogenStyle()}>//Research //Innovate //Create</span>
+          <span className={this.setNameStyle()}>HELLO</span>
+          <span className={this.setSlogenStyle()}>
+           <ul>
+            <li className="tab">
+              <div className="shiftLeft">
+                <div class="initText">//About</div>
+              </div>
+              <div className="shiftRight">
+                <div class="addtext">Me</div>
+              </div>
+            </li>
+            <li className="tab">
+            <div className="shiftLeft">
+                <div class="initText">//Skilled</div>
+              </div>
+              <div className="shiftRight">
+                <div class="addtext">In</div>
+              </div>
+            </li>
+            <li className="tab">
+            <div className="shiftLeft">
+                <div class="initText">//Exper</div>
+              </div>
+              <div className="shiftRight">
+                <div class="addtext">-ience</div>
+              </div>
+            </li>
+           </ul>
+          </span>
           <button className={this.setContactButtonStyle()}>GET IN TOUCH</button>
         </div>
 
