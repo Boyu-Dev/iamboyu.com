@@ -5,7 +5,7 @@
 }
 .App {
   color: #c5be91;
-  height: 2000px;
+  height: 101vh;
   min-width: 800px;
 }
 
@@ -20,72 +20,98 @@
 }
 
 .App-card {
-  position: relative;
-  top: 20vh;
-  left: 45vw;
-  width: 50%;
-  border: 2px solid #c5be91; 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 20vh;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 .App-cardSticky {
+  position: relative;
   text-align: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 33px;
-  background-color: #c5be91;
+  height: 100vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   
 }
 .name {
-  font-size: 70pt;
-  background-color: #2e2d2d;
+  font-size: 100pt;
+  background-color:rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+
 }
 .nameSticky{
-  background-color: #c5be91;
-  font-size: 0;
+  font-size: 100pt;
+  background-color:rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+} 
+
+.tabTaggleOn{
+  height: 400vh;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.tabTaggleOff{
+  height: 33px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
-.slogenSticky{
+
+.tabSticky{
+  display: block;
   background-color: #c5be91;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
-.slogenSticky ul{
+.tabSticky ul{
+  background-color:rgba(0, 0, 0, 0);
   padding-left: 0%;
   display: inline;
-  background-color: #c5be91;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 
 }
 
-.slogenSticky li{
+.tabSticky li{
   display: inline-block;
   width: 150px;
   height: 25px;
   list-style-type: none;
   font-size: 15pt;
   color: #2e2d2d;
-  background-color: #c5be91;
+  background-color:rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.tagline{
+  font-size: 20pt;
+  background-color:rgba(0, 0, 0, 0);
+  display: block;
+  padding-bottom: 20px;
+  bottom: 0vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
-
-.alined{
+.taglineSticky{
+  font-size: 20pt;
+  background-color:rgba(0, 0, 0, 0);
   display: block;
-}
+  padding-bottom: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+} 
 
 /* navbar tab animation */
 .addtext {
   color: #2e2d2d;
-  background-color: #c5be91;
+  background-color:rgba(0, 0, 0, 0);
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -96,8 +122,9 @@
 }
 .initText {
   color: #2e2d2d;
-  background-color: #c5be91;
+  background-color:rgba(0, 0, 0, 0);
   font-size: 20px;
+  text-decoration: underline;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,13 +133,21 @@
   white-space: nowrap;
 }
 
-.slogenSticky li:hover .shiftRight{
+.tabSticky li:hover .shiftRight{
   width: 75px;
   left: 75px;
 }
-.slogenSticky li:hover .shiftLeft{
+.tabSticky li:hover .shiftLeft{
   width: 75px;
   right: 75px;
+}
+.tabSticky li:hover .exp{
+  width: 55px;
+  right: 95px;
+}
+.tabSticky li:hover .erience{
+  width: 95px;
+  left: 55px;
 }
 
 .shiftRight {
@@ -120,11 +155,12 @@
   bottom: 0;
   left: 150px;
   right: 0;
-  background-color: #c5be91;
+  background-color:rgba(0, 0, 0, 0);
   overflow: hidden;
   width: 0px;
   height: 23px;
-  transition: .5s ease;
+  transition: .4s ease;
+  
 }
 
 .shiftLeft {
@@ -132,16 +168,16 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #c5be91;
+  background-color:rgba(0, 0, 0, 0);
   overflow: hidden;
   width: 150px;
   height: 23px;
-  transition: .5s ease;
+  transition: .4s ease;
+  
 }
 
 .tab{
   position: relative;
-  left: 0;
 }
 
 /* get in touch button */
@@ -158,28 +194,46 @@
 .getInTouch:hover{
   box-shadow: 0 0px 50px 0 #c5be91;
   font-size: 25pt;
+  cursor: pointer;
 }
 
 .getInTouchSticky{
-  position: absolute;
-  right: 0%;
+  position: fixed;
+  top: 0;
+  right: 0;
   padding: 2px;
-  color: #c5be91;
-  border: 2px solid #c5be91; 
-  background-color: #2e2d2d;
+  color: #2e2d2d;
+  border: 2px solid rgba(0, 0, 0, 0); 
+  background-color:rgba(197, 190, 145, 0.5);
   font-size: 15pt;
-/* animation */
-  -webkit-transition-duration: 0.1s; /* Safari */
-  transition-duration: 0.1s;
+  text-decoration: underline;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s ease;
 }
 
 .getInTouchSticky:hover{
-  box-shadow: inset 0 0 20px 5px #c5be91;
+  font-size: 16pt;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s ease;
+  
 }
 
 
 .App-intro {
   font-size: large;
+}
+
+
+.contactPage{
+  position: fixed;
+  height: 90vh;
+  width: 90vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background: #2e2d2d; 
 }
 
 @keyframes App-logo-spin {
