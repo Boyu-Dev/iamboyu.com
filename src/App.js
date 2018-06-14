@@ -13,6 +13,7 @@ class App extends Component {
       atAbout: false,
       atWork: false,
       atExp: false,
+      renderContact: false,
     };
 
     this.tabOnClick = this.tabOnClick.bind(this);
@@ -39,7 +40,7 @@ class App extends Component {
         atAbout: false,
         atWork: false,
         atExp: false,
-        stickNav: false
+        stickNav: false,
       });
     }
     else if (pageYOffset > 0){
@@ -75,15 +76,10 @@ class App extends Component {
 
   getContact(){
     console.log("contact!");
-    this.render(
-      <div className="contactPage">
-      hi
-      </div>
-
-
-    );
+    this.setState(prevState => ({
+      getContact: !prevState.getContact,
+    }));
   }
-
 
   render() {
     return (
@@ -127,6 +123,11 @@ class App extends Component {
            <div></div>
           </span>
           <button className={this.setContactButtonStyle()} onClick={this.getContact}>GET IN TOUCH</button>
+            {this.state.getContact ? 
+              <div className="contactPage">
+                <div className="closeContactPage" onClick={this.getContact}>X</div>
+                <p>Contact</p>
+              </div> : null}
         </div>
 
         <p className="App-intro">  

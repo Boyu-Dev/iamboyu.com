@@ -224,17 +224,33 @@
   font-size: large;
 }
 
-
+/* contactpage */
 .contactPage{
   position: fixed;
+    top: 5vh;
+    right: 5vw;
   height: 90vh;
   width: 90vw;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
   background: #2e2d2d; 
+  border: 2px solid #c5be91;
 }
+
+.closeContactPage{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s ease;
+}
+.closeContactPage:hover{
+  transform: rotate(360deg);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s ease;
+}
+/* end of contact page */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
