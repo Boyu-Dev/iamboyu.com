@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+
 
 class App extends Component {
 // Get the navbar
@@ -75,7 +76,7 @@ class App extends Component {
 
 
   getContact(){
-    console.log("contact!");
+    
     this.setState(prevState => ({
       getContact: !prevState.getContact,
     }));
@@ -124,10 +125,28 @@ class App extends Component {
           </span>
           <button className={this.setContactButtonStyle()} onClick={this.getContact}>GET IN TOUCH</button>
             {this.state.getContact ? 
+              <ReactCSSTransitionGroup
+                transitionName="contactPageAnimation"
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={300}
+              >
               <div className="contactPage">
                 <div className="closeContactPage" onClick={this.getContact}>X</div>
-                <p>Contact</p>
-              </div> : null}
+                <p className="contactTitle">Let's Talk</p>
+                <p>New project, opportunities, or even just to get coffee.<br/>I am all down!</p>
+                <form className="contactForm">
+                  <div>
+                    <input type="text" placeholder="Name *"/>
+                  </div>
+                  <div>
+                    <input type="text" placeholder="E-mail *"/>
+                  </div>
+                  <div>
+                    <textarea type="text" placeholder="Message *"/>
+                  </div>
+                </form>
+              </div>
+              </ReactCSSTransitionGroup> : null}
         </div>
 
         <p className="App-intro">  
