@@ -293,6 +293,14 @@
   border-bottom: 2px solid #c5be91;
 }
 
+.contactForm button{
+  position: relative;
+  margin-top: 5vh;
+  border: 2px solid #c5be91;
+  font-size: 20pt;
+  color: #c5be91;
+
+}
 /* end of contact page */
 
 @keyframes App-logo-spin {

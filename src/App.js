@@ -93,7 +93,7 @@ class App extends Component {
 
         <div className={this.getNavBarStyle()} ref={ref=>this.navBar=ref}>
           <span className={this.setNameStyle()}>Bo Yu</span>
-          <span className={this.setTagline()}>Interactive Software Developer</span>
+          <span className={this.setTagline()}>Interactive Software Developer & UX Engineer</span>
           <span className={this.setTabStyle()}>
            <ul>
             <li className="tab" onClick={this.tabOnClick}>
@@ -143,6 +143,9 @@ class App extends Component {
                   </div>
                   <div>
                     <textarea type="text" placeholder="Message *"/>
+                  </div>
+                  <div>
+                    <button>Send Message</button>
                   </div>
                 </form>
               </div>
