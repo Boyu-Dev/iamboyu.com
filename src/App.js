@@ -144,6 +144,7 @@ class App extends Component {
                   Now days when I have free time, I am like to make silly games. And 
                   Once a year I travel the world to <strong> experience and learn </strong> 
                   about new cultures.
+                  <h href="empty">View My Resume</h>
                 </div>
                   <div className="About-skills">
                     <h>My Skills</h>

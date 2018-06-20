@@ -310,12 +310,7 @@
   position: relative;
 }
 
-.aboutBackdrop{
-  background-color: #00000000;
-  color:#2e2d2d1e;
-  font-size: 100pt;
-  font-weight: bolder;
-}
+
 
 .AboutIntro-text{
   margin-top: 20px;
@@ -327,7 +322,14 @@
   width: 400px;
   position: relative;
   display: inline-block;
-
+}
+.aboutBackdrop{
+  background-color: #00000000;
+  color:#2e2d2d1e;
+  font-size: 100pt;
+  font-weight: bolder;
+  position: relative;
+  height: auto;
 }
 .AboutIntro-text h{
   display: block;
@@ -365,7 +367,7 @@ strong{
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px; 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 60px;
   height: 60px;
   background-color: #00000000;
