@@ -127,10 +127,10 @@ class App extends Component {
            <div className="boInfo">
             {this.state.stickNav ? 
               <div className="aboutPage">
-                <div className="aboutBackdrop">
-                  About
-                </div>
                 <div className="AboutIntro-text">
+                  <div className="aboutBackdrop">
+                    About
+                  </div>
                   <h>Me</h>
                   I am Bo Yu, a 24-year-old Canadian 
                   <strong> UX Engineer and Software Developer. </strong>
@@ -227,7 +227,7 @@ class App extends Component {
                     <div className="skill-App a20">
                     <img src="img/bitbucket_icon.svg" alt="bitbucket"/>
                     </div>
-                    
+
                   </div>
               </div>
             : null}

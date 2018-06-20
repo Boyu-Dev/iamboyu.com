@@ -6,7 +6,6 @@
 .App {
   color: #c5be91;
   height: 101vh;
-  min-width: 800px;
 }
 
 .App-logo {
@@ -36,6 +35,7 @@
   
 }
 .name {
+  display: block;
   font-size: 100pt;
   background-color:rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -50,7 +50,7 @@
 } 
 
 .tabTaggleOn{
-  height: 400vh;
+  height: auto;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -63,7 +63,6 @@
 
 .tabSticky{
   display: block;
-  min-width: 800px;
   background-color: #c5be91;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -72,7 +71,9 @@
 .tabSticky ul{
   background-color:rgba(0, 0, 0, 0);
   padding-left: 0%;
-  display: inline;
+  display: inline-block;
+  height: auto;
+  margin: 0;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 
@@ -94,7 +95,7 @@
 .tagline{
   font-size: 20pt;
   background-color:rgba(0, 0, 0, 0);
-  display: block;
+  display: inline-block;
   padding-bottom: 20px;
   bottom: 0vh;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -305,9 +306,7 @@
 /* ############################################## bo's Info ############################################## */
 
 .aboutPage{
-
   background-color: #c5be91;
-  height: 800px;
   position: relative;
 }
 
@@ -315,27 +314,28 @@
   background-color: #00000000;
   color:#2e2d2d1e;
   font-size: 100pt;
-  text-align: left;
   font-weight: bolder;
-  position: absolute;
-  margin-left: 5vw;
 }
+
 .AboutIntro-text{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px; 
   background-color: #00000000;
   color: #2e2d2d;
   text-align: justify;
-  width: 370px;
-  position: absolute;
-    top: 150px;
-  margin-left: 5vw;
-  display: block;
+  width: 400px;
+  position: relative;
+  display: inline-block;
 
 }
 .AboutIntro-text h{
   display: block;
   background: #00000000;
   font-size: 20pt;
+  margin-bottom: 20px;
   font-weight: bold;
+
 }
 strong{
   background: #00000000;
@@ -343,12 +343,13 @@ strong{
 }
 
 .About-skills{
+  display: inline-block;
   background-color: #00000000;
   width: 400px;
-  height: 600px;
-  position: absolute;
-    top: 30px;
-    left: 450px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px; 
 }
 .About-skills h{
   display: block;
@@ -356,15 +357,14 @@ strong{
   text-align: left;
   color: #2e2d2d;
   margin-bottom: 20px;
-  margin-left: 40px;
   font-size: 20pt; 
   font-weight: bold;
 }
 
 .skill-App{
   display: inline-block;
-  position: relative;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px; 
   margin-bottom: 40px;
   width: 60px;
   height: 60px;
