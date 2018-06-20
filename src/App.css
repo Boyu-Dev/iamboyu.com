@@ -108,7 +108,7 @@
   transition-duration: 0.4s;
 } 
 
-/* navbar tab animation */
+/* ############################################## navbar tab animation ############################################## */
 .addtext {
   color: #2e2d2d;
   background-color:rgba(0, 0, 0, 0);
@@ -224,7 +224,7 @@
   font-size: large;
 }
 
-/* contactpage */
+/* ############################################## contactpage ############################################## */
 .contactPage{
   position: fixed;
     top: 5vh;
@@ -301,7 +301,82 @@
   color: #c5be91;
 
 }
-/* end of contact page */
+/* ############################################## bo's Info ############################################## */
+
+.aboutPage{
+  background-color: #c5be91;
+  width: 100vw;
+  height: 800px;
+}
+
+.aboutBackdrop{
+  background-color: #00000000;
+  color:#2e2d2d1e;
+  font-size: 100pt;
+  text-align: left;
+  font-weight: bolder;
+  position: relative;
+  margin-left: 5vw;
+}
+.AboutIntro-text{
+  background-color: #00000000;
+  color: #2e2d2d;
+  text-align: justify;
+  width: 370px;
+  position: absolute;
+  margin-left: 5vw;
+  display: block;
+
+}
+.AboutIntro-text h{
+  display: block;
+  background: #00000000;
+  font-size: 20pt;
+  font-weight: bold;
+}
+strong{
+  background: #00000000;
+  color: #bb0505;
+}
+
+.About-skills{
+  display: inline-block;
+  background-color: #00000000;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+    top: 330px;
+}
+.About-skills h{
+  display: block;
+  background-color: #00000000;
+  text-align: left;
+  color: #2e2d2d;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 20pt; 
+  font-weight: bold;
+}
+
+.skill-App{
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #2e2d2d;
+  border-radius: 12px;
+}
+.a1{
+
+}
+
+
+
+
+
+/* ############################################## temp stuff ############################################## */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -315,23 +390,4 @@
 @keyframes shiftOut {
   from { transform: translateX(100vw); }
   to { transform: translateX(0px); }
-}
-
-
-.contactPageAnimation-enter {
-  opacity: 0.01;
-}
-
-.contactPageAnimation-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.contactPageAnimation-leave {
-  opacity: 1;
-}
-
-.contactPageAnimation-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
 }
