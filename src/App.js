@@ -147,42 +147,87 @@ class App extends Component {
                 </div>
                   <div className="About-skills">
                     <h>My Skills</h>
+
                     <div className="skill-App a1">
-                    hi
+                      <img src="img/html_icon.svg" alt="html"/>
                     </div>
+
                     <div className="skill-App a2">
-                    hi
+                      <img src="img/css_icon.svg" alt="css"/>
                     </div>
+
                     <div className="skill-App a3">
-                    hi
+                      <img src="img/js_icon.svg" alt="javascript"/>
                     </div>
+
                     <div className="skill-App a4">
-                    hi
+                      <img src="img/es3_icon.svg" alt="es3"/>
                     </div>
+
                     <div className="skill-App a5">
-                    hi
+                      <img src="img/csharp_icon.svg" alt="C#"/>
                     </div>
+
                     <div className="skill-App a6">
-                    hi
+                      <img src="img/c++_icon.svg" alt="c++"/>
                     </div>
+
                     <div className="skill-App a7">
-                    hi
+                      <img src="img/java_icon.svg" alt="java"/>
                     </div>
+
                     <div className="skill-App a8">
-                    hi
+                      <img src="img/python_icon.svg" alt="python"/>
                     </div>
+
                     <div className="skill-App a9">
-                    hi
+                      <img src="img/mdb_icon.svg" alt="mdb"/>
                     </div>
+
                     <div className="skill-App a10">
-                    hi
+                      <img src="img/mysql_icon.svg" alt="mysql"/>
                     </div>
+
                     <div className="skill-App a11">
-                    hi
+                      <img src="img/react_icon.svg" alt="react native"/>
                     </div>
+
                     <div className="skill-App a12">
-                    hi
+                      <img src="img/vs_icon.svg" alt="visual studio"/>
                     </div>
+
+                    <div className="skill-App a13">
+                      <img src="img/ai_icon.svg" alt="adobe illustrator"/>
+                    </div>
+
+                    <div className="skill-App a14">
+                      <img src="img/id_icon.svg" alt="adobe indesign"/>
+                    </div>
+
+                    <div className="skill-App a15">
+                      <img src="img/an_icon.svg" alt="adobe animate"/>
+                    </div>
+
+                    <div className="skill-App a16">
+                      <img src="img/ps_icon.svg" alt="adobe photoshop"/>
+                    </div>
+
+                    <div className="skill-App a17">
+                      <img src="img/blender_icon.svg" alt="blender"/>
+                    </div>
+
+                    <div className="skill-App a18">
+                      <img src="img/unity_icon.svg" alt="unity"/>
+                    </div>
+
+                    <div className="skill-App a19">
+                    <img src="img/github_icon.svg" alt="github"/>
+                    </div>
+
+                    <div className="skill-App a20">
+                    <img src="img/bitbucket_icon.svg" alt="bitbucket"/>
+                    </div>
+                    
                   </div>
               </div>
             : null}

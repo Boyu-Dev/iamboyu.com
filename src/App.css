@@ -63,6 +63,7 @@
 
 .tabSticky{
   display: block;
+  min-width: 800px;
   background-color: #c5be91;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -304,9 +305,10 @@
 /* ############################################## bo's Info ############################################## */
 
 .aboutPage{
+
   background-color: #c5be91;
-  width: 100vw;
   height: 800px;
+  position: relative;
 }
 
 .aboutBackdrop{
@@ -315,7 +317,7 @@
   font-size: 100pt;
   text-align: left;
   font-weight: bolder;
-  position: relative;
+  position: absolute;
   margin-left: 5vw;
 }
 .AboutIntro-text{
@@ -324,6 +326,7 @@
   text-align: justify;
   width: 370px;
   position: absolute;
+    top: 150px;
   margin-left: 5vw;
   display: block;
 
@@ -340,12 +343,12 @@ strong{
 }
 
 .About-skills{
-  display: inline-block;
   background-color: #00000000;
   width: 400px;
-  height: 400px;
+  height: 600px;
   position: absolute;
-    top: 330px;
+    top: 30px;
+    left: 450px;
 }
 .About-skills h{
   display: block;
@@ -365,11 +368,14 @@ strong{
   margin-bottom: 40px;
   width: 60px;
   height: 60px;
-  background-color: #2e2d2d;
+  background-color: #00000000;
   border-radius: 12px;
 }
-.a1{
-
+.About-skills img{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #00000000;
 }
 
 
