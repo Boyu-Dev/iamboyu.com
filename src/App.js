@@ -41,18 +41,18 @@ class App extends Component {
     }
     const pageYOffset = window.pageYOffset;
    
-    if(pageYOffset < 1){
-      this.setState({
-        atHome: true,
-        atAbout: false,
-        atWork: false,
-        atExp: false,
-        stickNav: false,
-      });
-    }
-    else if (pageYOffset > 0){
-      this.setState({stickNav: true});
-    }
+    // if(pageYOffset < 1){
+    //   this.setState({
+    //     atHome: true,
+    //     atAbout: false,
+    //     atWork: false,
+    //     atExp: false,
+    //     stickNav: false,
+    //   });
+    // }
+    // else if (pageYOffset > 0){
+    //   this.setState({stickNav: true});
+    // }
   }
 
   tabOnClick(){
