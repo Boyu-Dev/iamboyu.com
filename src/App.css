@@ -6,6 +6,7 @@
 .App {
   color: #c5be91;
   height: 101vh;
+  min-width: 500px;
 }
 
 .App-logo {
@@ -20,7 +21,6 @@
 
 .App-card {
   height: 100vh;
-  width: 100vw;
   padding-top: 20vh;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -342,6 +342,7 @@
 strong{
   background: #00000000;
   color: #bb0505;
+  font-weight: bold;
 }
 
 .About-skills{
@@ -382,6 +383,89 @@ strong{
 
 
 
+/* ############################################## Experience page ############################################## */
+
+.boExperience{
+  background-color: #ffffff1f;
+  position: relative;
+  display: block;
+}
+
+.boExperienceHeader{
+  background-color: #00000000;
+  color:#2e2d2d1e;
+  font-size: 60pt;
+  font-weight: bolder;
+  position: relative;
+  width: 400px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  text-align: left;
+}
+.boExperienceFill{
+  background-color: #00000000;
+  position: relative;
+  width: 400px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+  /* block styles*/
+.experienceBlock {
+  background-color: #00000000;
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+.experienceBlock .title{
+  background-color: #00000000;
+  color: #2e2d2d;
+  text-align: left;
+  font-size: 25pt;
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+}
+
+.experienceBlock .timelineContainer{
+  width: 200px;
+  display: inline-block;
+  background-color: #00000000;
+}
+
+.experienceBlock .timeline{
+  color: #c5be91;
+  margin-left: auto;
+  font-size: 12pt;
+  border-radius: 10px;
+  width: 100px;
+  
+}
+.previous{
+  background-color: #be1f1f;
+}
+.current{
+  background-color: #51be1f;
+}
+
+.experienceBlock .location{
+background-color: #00000000;
+color: #2e2d2d;
+text-align: left;
+font-style: italic;
+}
+
+.experienceBlock p{
+background-color: #00000000;
+color: #2e2d2d;
+text-align: justify;
+}
 
 
 /* ############################################## temp stuff ############################################## */

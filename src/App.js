@@ -15,17 +15,23 @@ class App extends Component {
       atWork: false,
       atExp: false,
       renderContact: false,
+      width: 0, 
+      height: 0,
     };
 
     this.tabOnClick = this.tabOnClick.bind(this);
     this.getContact = this.getContact.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   componentDidMount(){
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
     window.addEventListener("scroll", this.handleWindowScroll);
   }
   componentWillUnmount(){
     window.removeEventListener("scroll", this.handleWindowScroll);
+    window.removeEventListener('resize', this.updateWindowDimensions);
   }
 
   //scroll handlers
@@ -82,6 +88,12 @@ class App extends Component {
     }));
   }
 
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    console.log(this.state.width);
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -126,6 +138,7 @@ class App extends Component {
            </ul>
            <div className="boInfo">
             {this.state.stickNav ? 
+            //aboout me
               <div className="aboutPage">
                 <div className="AboutIntro-text">
                   <div className="aboutBackdrop">
@@ -141,7 +154,7 @@ class App extends Component {
                   <strong> create </strong> intelligent user experiences and software
                   with strong integrity. 
                   <br/>
-                  Now days when I have free time, I am like to make silly games. And 
+                  Nowadays when I have free time, I like to make silly games. And 
                   Once a year I travel the world to <strong> experience and learn </strong> 
                   about new cultures.
                   <h href="empty">View My Resume</h>
@@ -230,6 +243,85 @@ class App extends Component {
                     </div>
 
                   </div>
+
+                  <div className="boExperience">
+                    <div className="boExperienceHeader">Experience</div>
+                    <div className="boExperienceFill"> </div>
+                    
+                    <div className="experienceBlock">
+                      <div className="title">Title</div>
+                      <div className="timelineContainer">
+                        <div className="timeline current">Time Frame</div>
+                      </div>
+                      <div className="location">Location</div>
+                      <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
+                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
+                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
+                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
+                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
+                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
+                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      </p>
+                    </div>
+
+                    <div className="experienceBlock">
+                      <div className="title">Title</div>
+                      <div className="timelineContainer">
+                        <div className="timeline previous">Time Frame</div>
+                      </div>
+                      <div className="location">Location</div>
+                      <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
+                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
+                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
+                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
+                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
+                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
+                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      </p>
+                    </div>
+
+                    <div className="experienceBlock">
+                      <div className="title">Title</div>
+                      <div className="timelineContainer">
+                        <div className="timeline previous">Time Frame</div>
+                      </div>
+                      <div className="location">Location</div>
+                      <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
+                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
+                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
+                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
+                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
+                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
+                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      </p>
+                    </div>
+
+                    <div className="experienceBlock">
+                      <div className="title">Title</div>
+                      <div className="timelineContainer">
+                        <div className="timeline previous">Time Frame</div>
+                      </div>
+                      <div className="location">Location</div>
+                      <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
+                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
+                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
+                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
+                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
+                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
+                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      </p>
+                    </div>
+
+                  </div>
+
               </div>
             : null}
              
@@ -240,7 +332,7 @@ class App extends Component {
               <div className="contactPage">
                 <div className="closeContactPage" onClick={this.getContact}>X</div>
                 <p className="contactTitle">Let's Talk</p>
-                <p>New project, opportunities, or even just to get coffee.<br/>I am all down!</p>
+                <p>New project, opportunities, or even just to get coffee.<br/>I am down!</p>
                 <form className="contactForm">
                   <div>
                     <input type="text" placeholder="Name *"/>
