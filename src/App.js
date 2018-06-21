@@ -244,6 +244,7 @@ class App extends Component {
 
                   </div>
 
+                  <div className="boExperienceContainer">
                   <div className="boExperience">
                     <div className="boExperienceHeader">Experience</div>
                     <div className="boExperienceFill"> </div>
@@ -320,6 +321,7 @@ class App extends Component {
                       </p>
                     </div>
 
+                    </div>
                   </div>
 
               </div>

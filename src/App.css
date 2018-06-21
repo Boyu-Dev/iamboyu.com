@@ -2,7 +2,7 @@
   font-family: 'Quicksand', sans-serif;
   background-color: #2e2d2d;
   box-sizing: border-box;
-}
+  }
 .App {
   color: #c5be91;
   height: 101vh;
@@ -385,10 +385,16 @@ strong{
 
 /* ############################################## Experience page ############################################## */
 
-.boExperience{
+.boExperienceContainer{
   background-color: #ffffff1f;
+}
+
+.boExperience{
+  background-color: #00000000;
   position: relative;
   display: block;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .boExperienceHeader{
