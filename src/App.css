@@ -310,8 +310,6 @@
   position: relative;
 }
 
-
-
 .AboutIntro-text{
   margin-top: 20px;
   margin-left: 20px;
@@ -322,23 +320,27 @@
   width: 400px;
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
+
 .aboutBackdrop{
   background-color: #00000000;
   color:#2e2d2d1e;
   font-size: 100pt;
   font-weight: bolder;
   position: relative;
-  height: auto;
+  height: 150px;
+  vertical-align: top;
 }
+
 .AboutIntro-text h{
   display: block;
   background: #00000000;
   font-size: 20pt;
   margin-bottom: 20px;
   font-weight: bold;
-
 }
+
 strong{
   background: #00000000;
   color: #bb0505;
@@ -354,6 +356,7 @@ strong{
   margin-left: 20px;
   margin-right: 20px; 
 }
+
 .About-skills h{
   display: block;
   background-color: #00000000;
@@ -390,6 +393,7 @@ strong{
 }
 
 .boExperience{
+
   background-color: #00000000;
   position: relative;
   display: block;
@@ -409,6 +413,7 @@ strong{
   margin-left: 20px;
   margin-right: 20px; 
   text-align: left;
+  vertical-align: top;
 }
 .boExperienceFill{
   background-color: #00000000;
@@ -418,6 +423,7 @@ strong{
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px; 
+  vertical-align: top;
 }
   /* block styles*/
 .experienceBlock {
@@ -428,19 +434,20 @@ strong{
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px; 
+  vertical-align: top;
 }
 .experienceBlock .title{
   background-color: #00000000;
   color: #2e2d2d;
   text-align: left;
-  font-size: 25pt;
+  font-size: 20pt;
   font-weight: bold;
   display: inline-block;
-  width: 200px;
+  width: 300px;
 }
 
 .experienceBlock .timelineContainer{
-  width: 200px;
+  width: 100px;
   display: inline-block;
   background-color: #00000000;
 }
@@ -448,7 +455,7 @@ strong{
 .experienceBlock .timeline{
   color: #c5be91;
   margin-left: auto;
-  font-size: 12pt;
+  font-size: 10pt;
   border-radius: 10px;
   width: 100px;
   
@@ -465,6 +472,7 @@ background-color: #00000000;
 color: #2e2d2d;
 text-align: left;
 font-style: italic;
+font-size: 10pt;
 }
 
 .experienceBlock p{

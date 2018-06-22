@@ -250,74 +250,60 @@ class App extends Component {
                     <div className="boExperienceFill"> </div>
                     
                     <div className="experienceBlock">
-                      <div className="title">Title</div>
+                      <div className="title">Teaching Assistant</div>
                       <div className="timelineContainer">
-                        <div className="timeline current">Time Frame</div>
+                        <div className="timeline current">Present 2mos</div>
                       </div>
-                      <div className="location">Location</div>
+                      <div className="location">University of Ontario Institute of Technology, Oshawa</div>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
-                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
-                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
-                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
-                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
-                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
-                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      As a math and programming TA, I teach students how the two subjects are relevent
+                      and how they are applied in real world applications. I also help design tutorial materials
+                      along side the professors. Occasionally I would also help professors with
+                      marking assignments and exams, I would also invigilate during exam season.
                       </p>
                     </div>
 
                     <div className="experienceBlock">
-                      <div className="title">Title</div>
+                      <div className="title">UX Engineer</div>
                       <div className="timelineContainer">
-                        <div className="timeline previous">Time Frame</div>
+                        <div className="timeline current">Present 2.8yrs</div>
                       </div>
-                      <div className="location">Location</div>
+                      <div className="location">Moonwalk Studios, Oshawa</div>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
-                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
-                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
-                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
-                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
-                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
-                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      I lead the development of gameplay user experience in many projects both in VR and traditional space, 
+                      as well as conducting user research and analysing test data. I am also responsible for designing and implementing 
+                      diegetic UI focusing on ease of use, and seamless tutotialization. When I am not on a project, I would join our research team. 
+                      We research and test existing VR user experience methods, then develop new methods to overcome problems, 
+                      and improve user comfort. 
                       </p>
                     </div>
 
                     <div className="experienceBlock">
-                      <div className="title">Title</div>
+                      <div className="title">Content Developer</div>
                       <div className="timelineContainer">
-                        <div className="timeline previous">Time Frame</div>
+                        <div className="timeline previous">2015.09 2.4yrs</div>
                       </div>
-                      <div className="location">Location</div>
+                      <div className="location">University of Ontario Institute of Technology, Oshawa</div>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
-                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
-                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
-                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
-                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
-                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
-                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      I was responsible for designing and writing introductory programming materials for students new to game development, 
+                      focused on improving student’s learning experience and the material's practicality. Our team also
+                      introduced game centric objectives to help students better understand how they can relate their programming knowledge 
+                      in the context of games development.
                       </p>
                     </div>
 
                     <div className="experienceBlock">
-                      <div className="title">Title</div>
+                      <div className="title">UX Engineer</div>
                       <div className="timelineContainer">
-                        <div className="timeline previous">Time Frame</div>
+                        <div className="timeline previous">2014.09 1yr</div>
                       </div>
-                      <div className="location">Location</div>
+                      <div className="location">Lingly Language Systems, Toronto</div>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Aliquam sit amet est bibendum, viverra libero eu, rhoncus nulla. 
-                      Mauris ligula libero, pharetra faucibus dui efficitur, hendrerit pretium arcu. 
-                      Integer faucibus odio vel dapibus consequat. Mauris eu est id enim aliquet ullamcorper et id purus. 
-                      Proin et orci eget odio fermentum dapibus non vitae lacus. Vestibulum ante ipsum primis in faucibus 
-                      orci luctus et ultrices posuere cubilia Curae; Integer fermentum odio mi, id fringilla erat elementum sed. 
-                      Nunc ut mauris non leo molestie efficitur et vitae erat. Ut facilisis scelerisque pretium. Etiam lacus quam, 
-                      vehicula quis varius ut, sagittis at ipsum. Aliquam quis viverra felis.
+                      I joined Lingly to lead the design and development of their web and mobile's user experience.
+                      Standardized the studio’s UI principles, identity, development process, quality control and testing pipeline.
+                      After a successful launch, we received excellent reviews and approval from our international users. Lingly 
+                      was quickly acquired by an investor shortly after.
+
                       </p>
                     </div>
 
