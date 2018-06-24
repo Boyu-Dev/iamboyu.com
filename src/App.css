@@ -5,7 +5,7 @@
   }
 .App {
   color: #c5be91;
-  height: 101%;
+  height: 101vh;
   min-width: 500px;
 }
 
@@ -282,6 +282,7 @@
   width: 70vw;
   border: none;
   border-bottom: 2px solid #c5be91;
+  color: #c5be91;
 }
 .contactForm textarea{
   font-size: 20pt;

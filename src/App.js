@@ -8,9 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      stickNav: false,
-      isToggleOn: false,
-      atHome: false,
+      stickNav: true,
+      atHome: true,
       atAbout: false,
       atWork: false,
       atExp: false,
@@ -19,7 +18,9 @@ class App extends Component {
       height: 0,
     };
 
-    this.tabOnClick = this.tabOnClick.bind(this);
+    this.aboutMeOnClick = this.aboutMeOnClick.bind(this);
+    this.expOnClick = this.expOnClick.bind(this);
+    this.workOnClick = this.workOnClick.bind(this);
     this.getContact = this.getContact.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -35,31 +36,42 @@ class App extends Component {
   }
 
   //scroll handlers
-  handleWindowScroll = (e) => {
+  handleWindowScroll= (e)=> {
     if(!this.navBar){
       return;
     }
     const pageYOffset = window.pageYOffset;
    
-    // if(pageYOffset < 1){
-    //   this.setState({
-    //     atHome: true,
-    //     atAbout: false,
-    //     atWork: false,
-    //     atExp: false,
-    //     stickNav: false,
-    //   });
-    // }
-    // else if (pageYOffset > 0){
-    //   this.setState({stickNav: true});
-    // }
+    //  if(pageYOffset < 1){
+    //    this.setState({
+    //      atHome: true,
+    //      atAbout: false,
+    //      atWork: false,
+    //      atExp: false,
+    //      stickNav: false,
+    //    });
+    //  }
+    //  else if (pageYOffset > 0){
+    //    this.setState({stickNav: true, atHome: false});
+    //  }
+     //console.log(window.pageYOffset);
   }
-
-  tabOnClick(){
-    this.setState(prevState => ({
-      isToggleOn: !prevState.isToggleOn,
-      stickNav: !prevState.stickNav,
-    }));
+// tabs onClick handles
+  aboutMeOnClick(){
+    var targetElement = document.getElementById("aboutMe");
+      console.log(targetElement.offsetParent.offsetTop);
+      //window.scrollTo(0,targetElement.offsetParent.offsetTop);
+      smoothScroll.scrollTo('aboutMe',null,250);
+  }
+  expOnClick(){
+    var targetElement = document.getElementById("exp");
+      console.log(targetElement.offsetTop);
+      smoothScroll.scrollTo('exp',null,250);
+  }
+  workOnClick(){
+    var targetElement = document.getElementById("aboutMe");
+      console.log(targetElement.offsetParent.offsetTop);
+      window.scrollTo(0,targetElement.offsetParent.offsetTop);
   }
 
   getNavBarStyle(){
@@ -90,8 +102,8 @@ class App extends Component {
 
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
-    console.log(this.state.width);
   }
+
 
 
   render() {
@@ -108,7 +120,7 @@ class App extends Component {
           <span className={this.setTagline()}>UX Engineer && Software Developer </span>
           <span className={this.setTabStyle()}>
            <ul>
-            <li className="tab" onClick={this.tabOnClick}>
+            <li className="tab" onClick={this.aboutMeOnClick}>
               <div className="shiftLeft">
                 <div className="initText">//About</div>
               </div>
@@ -117,7 +129,7 @@ class App extends Component {
               </div>
             </li>
         
-            <li className="tab">
+            <li className="tab" onClick={this.expOnClick}>
             <div className="shiftLeft exp">
                 <div className="initText">//Exp</div>
               </div>
@@ -126,7 +138,7 @@ class App extends Component {
               </div>
             </li>
 
-            <li className="tab">
+            <li className="tab" onClick={this.tabOnClick}>
               <div className="shiftLeft">
                 <div className="initText">//Work</div>
               </div>
@@ -140,7 +152,7 @@ class App extends Component {
             {this.state.stickNav ? 
             //aboout me
               <div className="aboutPage">
-                <div className="AboutIntro-text">
+                <div id="aboutMe" className="AboutIntro-text">
                   <div className="aboutBackdrop">
                     About
                   </div>
@@ -244,7 +256,7 @@ class App extends Component {
 
                   </div>
 
-                  <div className="boExperienceContainer">
+                  <div id="exp"className="boExperienceContainer">
                   <div className="boExperience">
                     <div className="boExperienceHeader">Experience</div>
                     <div className="boExperienceFill"> </div>
@@ -303,12 +315,15 @@ class App extends Component {
                       Standardized the studio’s UI principles, identity, development process, quality control and testing pipeline.
                       After a successful launch, we received excellent reviews and approval from our international users. Lingly 
                       was quickly acquired by an investor shortly after.
-
                       </p>
                     </div>
 
                     </div>
                   </div>
+
+                <div className="workContainer">
+                
+                </div>    
 
               </div>
             : null}
@@ -336,7 +351,7 @@ class App extends Component {
                   </div>
                 </form>
               </div>
-              : null}
+              : <div></div>}
         </div>
 
       </div>
@@ -345,3 +360,76 @@ class App extends Component {
 }
 
 export default App;
+
+//smooth scroll 
+var smoothScroll = {
+	timer: null,
+
+	stop: function () {
+		clearTimeout(this.timer);
+	},
+
+	scrollTo: function (id, callback, addy) {
+		var settings = {
+			duration: 1000,
+			easing: {
+				outQuint: function (x, t, b, c, d) {
+					return c*((t=t/d-1)*t*t*t*t + 1) + b;
+				}
+			}
+		};
+		var percentage;
+		var startTime;
+		var node = document.getElementById(id);
+		var nodeTop = node.offsetTop;
+		var nodeHeight = node.offsetHeight;
+		var body = document.body;
+		var html = document.documentElement;
+		var height = Math.max(
+			body.scrollHeight,
+			body.offsetHeight,
+			html.clientHeight,
+			html.scrollHeight,
+			html.offsetHeight
+		);
+		var windowHeight = window.innerHeight
+		var offset = window.pageYOffset;
+		var delta = nodeTop - offset;
+		var bottomScrollableY = height - windowHeight;
+		var targetY = (bottomScrollableY < delta) ?
+			bottomScrollableY - (height - nodeTop - nodeHeight + offset):
+			delta;
+
+		startTime = Date.now();
+		percentage = 0;
+
+		if (this.timer) {
+			clearInterval(this.timer);
+		}
+
+		function step () {
+			var yScroll;
+			var elapsed = Date.now() - startTime;
+
+			if (elapsed > settings.duration) {
+				clearTimeout(this.timer);
+			}
+
+			percentage = elapsed / settings.duration;
+
+			if (percentage > 1) {
+				clearTimeout(this.timer);
+
+				if (callback) {
+					callback();
+				}
+			} else {
+				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY + addy, settings.duration);
+				window.scrollTo(0, yScroll);
+				this.timer = setTimeout(step, 10);     
+			}
+		}
+
+		this.timer = setTimeout(step, 10);
+	}
+};
