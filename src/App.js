@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
-
+import {smoothScroll} from './util/smoothScroll.js';
 
 class App extends Component {
 // Get the navbar
@@ -9,18 +8,10 @@ class App extends Component {
     super();
     this.state = {
       stickNav: true,
-      atHome: true,
-      atAbout: false,
-      atWork: false,
-      atExp: false,
-      renderContact: false,
       width: 0, 
       height: 0,
     };
 
-    this.aboutMeOnClick = this.aboutMeOnClick.bind(this);
-    this.expOnClick = this.expOnClick.bind(this);
-    this.workOnClick = this.workOnClick.bind(this);
     this.getContact = this.getContact.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -36,11 +27,11 @@ class App extends Component {
   }
 
   //scroll handlers
-  handleWindowScroll= (e)=> {
-    if(!this.navBar){
-      return;
-    }
-    const pageYOffset = window.pageYOffset;
+  // handleWindowScroll= (e)=> {
+  //   if(!this.navBar){
+  //     return;
+  //   }
+  //   const pageYOffset = window.pageYOffset;
    
     //  if(pageYOffset < 1){
     //    this.setState({
@@ -55,23 +46,20 @@ class App extends Component {
     //    this.setState({stickNav: true, atHome: false});
     //  }
      //console.log(window.pageYOffset);
-  }
+  // }
 // tabs onClick handles
+
   aboutMeOnClick(){
-    var targetElement = document.getElementById("aboutMe");
-      console.log(targetElement.offsetParent.offsetTop);
+      //console.log(targetElement.offsetParent.offsetTop);
       //window.scrollTo(0,targetElement.offsetParent.offsetTop);
       smoothScroll.scrollTo('aboutMe',null,250);
   }
   expOnClick(){
-    var targetElement = document.getElementById("exp");
-      console.log(targetElement.offsetTop);
+      //console.log(targetElement.offsetTop);
       smoothScroll.scrollTo('exp',null,250);
   }
   workOnClick(){
-    var targetElement = document.getElementById("aboutMe");
-      console.log(targetElement.offsetParent.offsetTop);
-      window.scrollTo(0,targetElement.offsetParent.offsetTop);
+      //console.log(targetElement.offsetParent.offsetTop);
   }
 
   getNavBarStyle(){
@@ -360,76 +348,3 @@ class App extends Component {
 }
 
 export default App;
-
-//smooth scroll 
-var smoothScroll = {
-	timer: null,
-
-	stop: function () {
-		clearTimeout(this.timer);
-	},
-
-	scrollTo: function (id, callback, addy) {
-		var settings = {
-			duration: 1000,
-			easing: {
-				outQuint: function (x, t, b, c, d) {
-					return c*((t=t/d-1)*t*t*t*t + 1) + b;
-				}
-			}
-		};
-		var percentage;
-		var startTime;
-		var node = document.getElementById(id);
-		var nodeTop = node.offsetTop;
-		var nodeHeight = node.offsetHeight;
-		var body = document.body;
-		var html = document.documentElement;
-		var height = Math.max(
-			body.scrollHeight,
-			body.offsetHeight,
-			html.clientHeight,
-			html.scrollHeight,
-			html.offsetHeight
-		);
-		var windowHeight = window.innerHeight
-		var offset = window.pageYOffset;
-		var delta = nodeTop - offset;
-		var bottomScrollableY = height - windowHeight;
-		var targetY = (bottomScrollableY < delta) ?
-			bottomScrollableY - (height - nodeTop - nodeHeight + offset):
-			delta;
-
-		startTime = Date.now();
-		percentage = 0;
-
-		if (this.timer) {
-			clearInterval(this.timer);
-		}
-
-		function step () {
-			var yScroll;
-			var elapsed = Date.now() - startTime;
-
-			if (elapsed > settings.duration) {
-				clearTimeout(this.timer);
-			}
-
-			percentage = elapsed / settings.duration;
-
-			if (percentage > 1) {
-				clearTimeout(this.timer);
-
-				if (callback) {
-					callback();
-				}
-			} else {
-				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY + addy, settings.duration);
-				window.scrollTo(0, yScroll);
-				this.timer = setTimeout(step, 10);     
-			}
-		}
-
-		this.timer = setTimeout(step, 10);
-	}
-};
