@@ -149,7 +149,6 @@ class App extends Component {
                   Nowadays when I have free time, I like to make silly games. And 
                   Once a year I travel the world to <strong> experience and learn </strong> 
                   about new cultures.
-                  <h href="empty">View My Resume</h>
                 </div>
                   <div className="About-skills">
                     <h>My Skills</h>
@@ -304,74 +303,68 @@ class App extends Component {
                   </div>
 
                 <div id="projects" className="workContainer">
-                  <div className="boExperienceHeader">Projects</div>
+                  <div className="boExperienceHeader">Fun Projects</div>
                   <div className="boExperienceFill"></div>
 
                   <div className="workBlock">
-                    <div className="title">TITLE</div>
-                    <div className="location">purpose</div>
+                    <div className="title">Bustle</div>
+                    <div className="location">Passion Project,<br/> UX/UI Designer, Developer</div>
                     <div className="link">
-                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                      <div className="linky" type="button" value="itch.io Page" onClick={()=> window.open("https://moonwalkstudios.itch.io/bustle", "_blank")}>itch.io Page</div>
                     </div>
                     <p>
-                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
-                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
-                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    Developed with fellow Moonwalk Studios members Over the course of 4 - 5 months, 
+                    we developed the current build of Bustle from the ground up, including engine, art, design, etc. 
+                    This current build was showcased at the Level Up Showcase in Toronto, Canada in April 2017.
                     </p>
                     <div className="media">
-                    
+                      <img src="img/bustle_icon.png" alt="GFRPO media icon"/>
                     </div>
                   </div>
 
                   <div className="workBlock">
-                    <div className="title">TITLE</div>
-                    <div className="location">purpose</div>
+                    <div className="title">G.F.R.P.O</div>
+                    <div className="location">Game Jam Project,<br/> UX/UI Designer, Developer</div>
                     <div className="link">
-                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                      <div className="linky" type="button" value="itch.io Page" onClick={()=> window.open("https://moonwalkstudios.itch.io/giant-family-reunion", "_blank")}>itch.io Page</div>
                     </div>
                     <p>
-                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
-                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
-                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    GFRPO was made during the UOIT GDSOC (Game Dev Society) 
+                    2017 48 Hour Game Jam at the University of Ontario Institute of Technology by 
+                    Moonwalk Studios members.
                     </p>
                     <div className="media">
-                    
+                      <img src="img/GFRPO_icon.png" alt="GFRPO media icon"/>
                     </div>
                   </div>
 
                   <div className="workBlock">
-                    <div className="title">TITLE</div>
-                    <div className="location">purpose</div>
+                    <div className="title">Monday Night Mines</div>
+                    <div className="location">Collaboration Project,<br/> Project Consultant/Manager</div>
                     <div className="link">
-                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                      <div className="linky" type="button" value="Demo Video" onClick={()=> window.open("https://youtu.be/WpMqaufpWEk", "_blank")}>Demo Video</div>
                     </div>
                     <p>
-                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
-                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
-                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    In collaboration with University of Ontario Institute of Technology, Monday Night Mines was a research and demo project developed along side
+                    current Game Development and Entrepreneurship program's students. The project gave students an opportunity to research, experiment and develop
+                    in a VR environment.
                     </p>
                     <div className="media">
-                    
+                      <iframe width="400" height="250" src="https://www.youtube.com/embed/WpMqaufpWEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                   </div>
 
                   <div className="workBlock">
-                    <div className="title">TITLE</div>
-                    <div className="location">purpose</div>
+                    <div className="title">Word Lounge (work in progress)</div>
+                    <div className="location">Android App Project,<br/> UX/UI Designer, Developer</div>
                     <div className="link">
-                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
                     </div>
                     <p>
-                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
-                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
-                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                      Word Lounge is a word puzzle game developed for Android Devices, and an exercise of developing
+                      mobile applications.
                     </p>
                     <div className="media">
-                    
+                      <img className="wlgif" src="img/wordlounge_animation.gif" atl="word lounge"/>
                     </div>
                   </div>
 

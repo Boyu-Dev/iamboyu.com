@@ -269,6 +269,7 @@ strong{
   margin-bottom: 20px;
   font-size: 20pt; 
   font-weight: bold;
+  width: 300px;
 }
 
 .skill-App{
@@ -287,6 +288,7 @@ strong{
   height: 60px;
   background-color: #00000000;
 }
+
 
 
 
@@ -312,7 +314,7 @@ strong{
   font-size: 60pt;
   font-weight: bolder;
   position: relative;
-  width: 400px;
+  width: 500px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
@@ -323,7 +325,7 @@ strong{
 .boExperienceFill{
   background-color: #00000000;
   position: relative;
-  width: 400px;
+  width: 300px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
@@ -451,13 +453,24 @@ text-align: justify;
   text-align: justify;
 }
 .workContainer .media{
-  background-color: #0000001f;
+  background-color: #00000000;
   color: #2e2d2d;
   display: block;
   width: 400px;
-  height: 200px;
+  height: auto;
   margin-bottom: 16px;
 
+}
+.workContainer .media img{
+  background-color: #00000000;
+  width: 400px;
+  height: 200px;
+}
+
+.workContainer .media img.wlgif{
+  position: relative;
+  width: 200px;
+  height: 322px;
 }
 
 /* ############################################## temp stuff ############################################## */
