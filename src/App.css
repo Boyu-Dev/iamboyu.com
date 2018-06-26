@@ -22,7 +22,7 @@
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  
+  min-width: 500px;
 }
 
 /* home page */
@@ -311,10 +311,10 @@ strong{
 .boExperienceHeader{
   background-color: #00000000;
   color:#2e2d2d1e;
-  font-size: 60pt;
+  font-size: 52pt;
   font-weight: bolder;
   position: relative;
-  width: 500px;
+  width: 400px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
@@ -325,7 +325,7 @@ strong{
 .boExperienceFill{
   background-color: #00000000;
   position: relative;
-  width: 300px;
+  width: 400px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
