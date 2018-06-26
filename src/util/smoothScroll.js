@@ -8,7 +8,7 @@ export var smoothScroll = {
 		clearTimeout(this.timer);
 	},
 
-	scrollTo: function (id, callback, addy) {
+	scrollTo: function (id, callback,) {
 		var settings = {
 			duration: 1000,
 			easing: {
@@ -17,6 +17,7 @@ export var smoothScroll = {
 				}
 			}
 		};
+		
 		var percentage;
 		var startTime;
 		var node = document.getElementById(id);
@@ -35,9 +36,10 @@ export var smoothScroll = {
 		var offset = window.pageYOffset;
 		var delta = nodeTop - offset;
 		var bottomScrollableY = height - windowHeight;
+		
 		var targetY = (bottomScrollableY < delta) ?
-			bottomScrollableY - (height - nodeTop - nodeHeight + offset):
-			delta;
+		bottomScrollableY - (height - nodeTop - nodeHeight + offset):
+		(delta);
 
 		startTime = Date.now();
 		percentage = 0;
@@ -63,7 +65,7 @@ export var smoothScroll = {
 					callback();
 				}
 			} else {
-				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY + addy, settings.duration);
+				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY, settings.duration);
 				window.scrollTo(0, yScroll);
 				this.timer = setTimeout(step, 10);     
 			}

@@ -5,23 +5,14 @@
   }
 .App {
   color: #c5be91;
-  height: 101vh;
   min-width: 500px;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
 }
 
 .App-header {
   position: static;
-  height: 0px;
 }
 
 .App-card {
-  height: 100vh;
-  padding-top: 20vh;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -29,41 +20,30 @@
 .App-cardSticky {
   position: relative;
   text-align: center;
-  height: 100vh;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   
 }
-.name {
-  display: block;
-  font-size: 100pt;
-  background-color:rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 
+/* home page */
+.homeContainer{
+  min-height: 100vh;
 }
+
 .nameSticky{
   font-size: 100pt;
   background-color:rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  padding-top: 25vh;
 } 
-
-.tabTaggleOn{
-  height: auto;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-.tabTaggleOff{
-  height: auto;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
 
 
 .tabSticky{
+  
   display: block;
   background-color: #c5be91;
+  position: relative;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -230,6 +210,9 @@ vertical-align: top;
   background-color: #c5be91;
   position: relative;
 }
+.aboutContainer{
+  background-color: #00000000;
+}
 
 .AboutIntro-text{
   margin-top: 20px;
@@ -310,7 +293,8 @@ strong{
 /* ############################################## Experience page ############################################## */
 
 .boExperienceContainer{
-  background-color: #ffffff1f;
+  background-color: #c7bf88;
+  min-height: 100vh;
 }
 
 .boExperience{
@@ -405,7 +389,8 @@ text-align: justify;
 
 /* ############################################## Work I did ############################################## */
 .workContainer{
-  background-color: #00000000;
+  background-color: #c5be91;
+  min-height: 100vh;
 }
 .workBlock{
   background-color: #00000000;

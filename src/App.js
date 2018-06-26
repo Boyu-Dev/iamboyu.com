@@ -51,15 +51,15 @@ class App extends Component {
   aboutMeOnClick(){
       //console.log(targetElement.offsetParent.offsetTop);
       //window.scrollTo(0,targetElement.offsetParent.offsetTop);
-      smoothScroll.scrollTo('aboutMe',null,250);
+      smoothScroll.scrollTo('aboutMe', null);
   }
   expOnClick(){
       //console.log(targetElement.offsetTop);
-      smoothScroll.scrollTo('exp',null,250);
+      smoothScroll.scrollTo('exp', null);
   }
   projectOnClick(){
       //console.log(targetElement.offsetParent.offsetTop);
-      smoothScroll.scrollTo('projects',null,250);
+      smoothScroll.scrollTo('projects', null);
   }
 
   getNavBarStyle(){
@@ -70,9 +70,6 @@ class App extends Component {
     return !this.state.stickNav ?  'name' : 'nameSticky' ;
   }
 
-  setTabStyle(){
-    return !this.state.stickNav ? 'tabSticky tabTaggleOff' : 'tabSticky tabTaggleOn' ; 
-  }
   setTagline(){
     return !this.state.stickNav ? 'tagline' : 'taglineSticky' ;
   }
@@ -97,9 +94,10 @@ class App extends Component {
        
 
         <div className={this.getNavBarStyle()} ref={ref=>this.navBar=ref}>
-          <span className={this.setNameStyle()}>Bo Yu</span>
-          <span className={this.setTagline()}>UX Engineer && Software Developer </span>
-          <span className={this.setTabStyle()}>
+          <div className="homeContainer">
+            <div className={this.setNameStyle()}>Bo Yu</div>
+            <div className={this.setTagline()}>UX Engineer && Software Developer </div>
+          <span className='tabSticky'>
            <ul>
             <li className="tab" onClick={this.aboutMeOnClick}>
               <div className="shiftLeft">
@@ -129,11 +127,12 @@ class App extends Component {
             </li>
 
            </ul>
-           <div className="boInfo">
-            {this.state.stickNav ? 
-            //aboout me
-              <div className="aboutPage">
-                <div id="aboutMe" className="AboutIntro-text">
+           </span>
+           </div>
+
+              <div id="aboutMe" className="aboutPage">
+                <div className="aboutContainer">
+                <div className="AboutIntro-text">
                   <div className="aboutBackdrop">
                     About
                   </div>
@@ -235,6 +234,8 @@ class App extends Component {
                     <img src="img/bitbucket_icon.svg" alt="bitbucket"/>
                     </div>
 
+                  </div>
+                  </div>
                   </div>
 
                   <div id="exp"className="boExperienceContainer">
@@ -373,15 +374,9 @@ class App extends Component {
                     
                     </div>
                   </div>
-                  
+
                 </div>
-
-
-              </div>
-            : null}
-             
-           </div>
-          </span>
+          
             <div className="getInTouchSticky" type="button" value="CONTACT" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>
               <div className="getinTouchLable">Contact</div>
               <img src="img/linkedin_icon.svg" alt="linkedin"/>
