@@ -403,6 +403,78 @@ text-align: justify;
 }
 
 
+/* ############################################## Work I did ############################################## */
+.workContainer{
+  background-color: #00000000;
+}
+.workBlock{
+  background-color: #00000000;
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  vertical-align: top;
+}
+.workContainer .title{
+  background-color: #00000000;
+  color: #2e2d2d;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+.workContainer .location{
+  background-color: #00000000;
+  color: #2e2d2d;
+  text-align: left;
+  font-style: italic;
+  font-size: 10pt;
+  margin-bottom: 10px;
+  width: 200px;
+  display: inline-block;
+  }
+
+.workContainer .link{
+  background-color: #00000000;
+  text-align: right;
+  font-style: italic;
+  font-size: 10pt;
+  margin-bottom: 10px;
+  width: 200px;
+  display: inline-block;
+  
+}
+.workContainer .linky{
+  background-color: #00000000;
+  color: #0026ff;
+  width: auto;
+  margin-right: 0;
+  text-align: right;
+  display: inline-block;
+  
+}
+.workContainer .linky:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.workContainer p{
+  background-color: #00000000;
+  color: #2e2d2d;
+  text-align: justify;
+}
+.workContainer .media{
+  background-color: #0000001f;
+  color: #2e2d2d;
+  display: block;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 16px;
+
+}
+
 /* ############################################## temp stuff ############################################## */
 
 @keyframes App-logo-spin {

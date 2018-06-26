@@ -57,8 +57,9 @@ class App extends Component {
       //console.log(targetElement.offsetTop);
       smoothScroll.scrollTo('exp',null,250);
   }
-  workOnClick(){
+  projectOnClick(){
       //console.log(targetElement.offsetParent.offsetTop);
+      smoothScroll.scrollTo('projects',null,250);
   }
 
   getNavBarStyle(){
@@ -118,12 +119,12 @@ class App extends Component {
               </div>
             </li>
 
-            <li className="tab" onClick={this.tabOnClick}>
+            <li className="tab" onClick={this.projectOnClick}>
               <div className="shiftLeft">
-                <div className="initText">//Work</div>
+                <div className="initText">//Fun</div>
               </div>
               <div className="shiftRight">
-                <div className="addtext">. I Did</div>
+                <div className="addtext">----.Projects</div>
               </div>
             </li>
 
@@ -301,9 +302,80 @@ class App extends Component {
                     </div>
                   </div>
 
-                <div className="workContainer">
-                
-                </div>    
+                <div id="projects" className="workContainer">
+                  <div className="boExperienceHeader">Projects</div>
+                  <div className="boExperienceFill"></div>
+
+                  <div className="workBlock">
+                    <div className="title">TITLE</div>
+                    <div className="location">purpose</div>
+                    <div className="link">
+                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                    </div>
+                    <p>
+                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
+                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
+                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    </p>
+                    <div className="media">
+                    
+                    </div>
+                  </div>
+
+                  <div className="workBlock">
+                    <div className="title">TITLE</div>
+                    <div className="location">purpose</div>
+                    <div className="link">
+                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                    </div>
+                    <p>
+                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
+                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
+                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    </p>
+                    <div className="media">
+                    
+                    </div>
+                  </div>
+
+                  <div className="workBlock">
+                    <div className="title">TITLE</div>
+                    <div className="location">purpose</div>
+                    <div className="link">
+                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                    </div>
+                    <p>
+                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
+                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
+                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    </p>
+                    <div className="media">
+                    
+                    </div>
+                  </div>
+
+                  <div className="workBlock">
+                    <div className="title">TITLE</div>
+                    <div className="location">purpose</div>
+                    <div className="link">
+                      <div className="linky" type="button" value="link" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>link</div>
+                    </div>
+                    <p>
+                    Morbi ultricies tortor id ante accumsan molestie. Donec vitae ultricies ante. 
+                    Vestibulum tempor viverra pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vivamus a aliquet mi, quis pretium quam. Donec dapibus leo at elementum accumsan.
+                    Nunc sodales massa vitae dolor imperdiet suscipit.
+                    </p>
+                    <div className="media">
+                    
+                    </div>
+                  </div>
+                  
+                </div>
+
 
               </div>
             : null}
