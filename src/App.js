@@ -11,8 +11,6 @@ class App extends Component {
       width: 0, 
       height: 0,
     };
-
-    this.getContact = this.getContact.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
@@ -22,6 +20,7 @@ class App extends Component {
     window.addEventListener("scroll", this.handleWindowScroll);
   }
   componentWillUnmount(){
+    this.updateWindowDimensions();
     window.removeEventListener("scroll", this.handleWindowScroll);
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
@@ -73,20 +72,13 @@ class App extends Component {
   setTabStyle(){
     return !this.state.stickNav ? 'tabSticky tabTaggleOff' : 'tabSticky tabTaggleOn' ; 
   }
-  setContactButtonStyle(){
-    return !this.state.stickNav ? 'getInTouch' : 'getInTouchSticky';
-  }
   setTagline(){
     return !this.state.stickNav ? 'tagline' : 'taglineSticky' ;
   }
-
-
-  getContact(){
-    
-    this.setState(prevState => ({
-      getContact: !prevState.getContact,
-    }));
+  contactButton(){
+    window.location.href='https://www.linkedin.com/in/bo-yu-09091514b/';
   }
+
 
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
@@ -150,7 +142,7 @@ class App extends Component {
                     I love making things that people interact with and 
                   I am always learning something new 
                   <strong> (I am currently learning about UX in games). </strong>
-                  I like to <strong> overcome </strong> design challenages,
+                  I like to <strong> overcome </strong> design challenges,
                   <strong> create </strong> intelligent user experiences and software
                   with strong integrity. 
                   <br/>
@@ -318,28 +310,10 @@ class App extends Component {
              
            </div>
           </span>
-          <button className={this.setContactButtonStyle()} onClick={this.getContact}>GET IN TOUCH</button>
-            {this.state.getContact ? 
-              <div className="contactPage">
-                <div className="closeContactPage" onClick={this.getContact}>X</div>
-                <p className="contactTitle">Let's Talk</p>
-                <p>New project, opportunities, or even just to get coffee.<br/>I am down!</p>
-                <form className="contactForm">
-                  <div>
-                    <input type="text" placeholder="Name *"/>
-                  </div>
-                  <div>
-                    <input type="text" placeholder="E-mail *"/>
-                  </div>
-                  <div>
-                    <textarea type="text" placeholder="Message *"/>
-                  </div>
-                  <div>
-                    <button>Send Message</button>
-                  </div>
-                </form>
-              </div>
-              : <div></div>}
+            <div className="getInTouchSticky" type="button" value="CONTACT" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>
+              <div className="getinTouchLable">Contact</div>
+              <img src="img/linkedin_icon.svg" alt="linkedin"/>
+            </div>
         </div>
 
       </div>

@@ -183,128 +183,47 @@
 }
 
 /* get in touch button */
-.getInTouch{
-  border: 2px solid #c5be91; 
-  background-color: #c5be91;
-  font-size: 20pt;
-  margin-top: 30px;
-  margin-bottom: 30px;
-/* animation */
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-.getInTouch:hover{
-  box-shadow: 0 0px 50px 0 #c5be91;
-  font-size: 25pt;
-  cursor: pointer;
-}
+
 
 .getInTouchSticky{
   position: fixed;
   top: 0;
   right: 0;
-  padding: 2px;
-  color: #2e2d2d;
-  border: 2px solid rgba(0, 0, 0, 0); 
+  border: 2px solid #2e2d2d; 
   background-color:rgba(197, 190, 145, 0.5);
-  font-size: 15pt;
-  text-decoration: underline;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s ease;
+  width: 110px;
+  font-size: 15pt;
 }
 
 .getInTouchSticky:hover{
-  font-size: 16pt;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s ease;
-  
 }
 
+.getinTouchLable{
+  display: inline-block;
+  background: #00000000;
+  color: #2e2d2d;
+  vertical-align: top;
+  height: 25px;
+  margin-top: 4px;
+  margin-left: 2px;
+
+}
+.getInTouchSticky img{
+display: inline-block;
+background: #00000000;
+height: 30px;
+width: 30px;
+vertical-align: top;
+}
 
 .App-intro {
   font-size: large;
 }
 
-/* ############################################## contactpage ############################################## */
-.contactPage{
-  position: fixed;
-    top: 5vh;
-    right: 5vw;
-  height: 90vh;
-  width: 90vw;
-  background: #2e2d2d; 
-  border: 2px solid #c5be91;
-  transition-delay: 500ms;
-  transform: scale(20%);
-  animation: shiftIn 0.4s ease-in-out;
 
-}
-.easeOut{
-  animation: shiftOut 0.4s ease-in-out;
-}
-
-
-.closeContactPage{
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s ease;
-}
-.closeContactPage:hover{
-  transform: rotate(360deg);
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s ease;
-}
-
-.contactPage p{
-  text-align: left;
-  margin-left: 10vw; 
-  margin-top: 0;
-}
-
-.contactPage p.contactTitle{
-  font-size: 20pt;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 5vh;
-}
-.contactForm{
-  font-size: 20pt;
-}
-.contactForm input{
-  margin-bottom: 30px;
-  font-size: 20pt;
-  width: 70vw;
-  border: none;
-  border-bottom: 2px solid #c5be91;
-  color: #c5be91;
-}
-.contactForm textarea{
-  font-size: 20pt;
-  position: relative;
-    left: 10vw;
-  width: 70vw;
-  height: 35vh;
-  resize: horizontal;
-  display: block;
-  border: none;
-  border-bottom: 2px solid #c5be91;
-  color: #c5be91;
-}
-
-.contactForm button{
-  position: relative;
-  margin-top: 5vh;
-  border: 2px solid #c5be91;
-  font-size: 20pt;
-  color: #c5be91;
-
-}
 /* ############################################## bo's Info ############################################## */
 
 .aboutPage{
