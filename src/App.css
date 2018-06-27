@@ -35,7 +35,7 @@
   background-color:rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  padding-top: 25vh;
+  padding-top: 20vh;
 } 
 
 
@@ -46,6 +46,12 @@
   position: relative;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+
+}
+
+.tabContainer{
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .tabSticky ul{
@@ -209,7 +215,7 @@ vertical-align: top;
 .aboutPage{
   background-color: #F2F8F8;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .aboutContainer{
   background-color: #00000000;
@@ -303,8 +309,10 @@ strong{
 .boExperienceContainer{
   background-color: #2e2d2d;
   min-height: 100vh;
+  margin: auto;
   padding-bottom: 5em;
   padding-top: 5em;
+  
 }
 
 .boExperience{
@@ -313,7 +321,10 @@ strong{
   position: relative;
   display: block;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  
 }
 
 .boExperienceHeader{

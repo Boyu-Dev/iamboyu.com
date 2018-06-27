@@ -96,7 +96,8 @@ class App extends Component {
         <div className={this.getNavBarStyle()} ref={ref=>this.navBar=ref}>
           <div className="homeContainer">
             <div className={this.setNameStyle()}>Bo Yu</div>
-            <div className={this.setTagline()}>UX Engineer && Software Developer </div>
+            <div className={this.setTagline()}>UX Engineer && Web Developer </div>
+          <div className="tabContainer">
           <span className='tabSticky'>
            <ul>
             <li className="tab" onClick={this.aboutMeOnClick}>
@@ -128,6 +129,7 @@ class App extends Component {
 
            </ul>
            </span>
+           </div>
            </div>
 
               <div id="aboutMe" className="aboutPage">
@@ -350,7 +352,7 @@ class App extends Component {
                     in a VR environment.
                     </p>
                     <div className="media">
-                      <iframe width="400" height="250" src="https://www.youtube.com/embed/WpMqaufpWEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      <iframe width="400" height="250" src="https://www.youtube.com/embed/WpMqaufpWEk" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                     </div>
                   </div>
 
