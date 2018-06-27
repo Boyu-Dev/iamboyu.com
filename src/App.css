@@ -4,7 +4,7 @@
   box-sizing: border-box;
   }
 .App {
-  color: #c5be91;
+  color: #F2F8F8;
   min-width: 500px;
 }
 
@@ -42,7 +42,7 @@
 .tabSticky{
   
   display: block;
-  background-color: #c5be91;
+  background-color: #F2F8F8;
   position: relative;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -207,7 +207,7 @@ vertical-align: top;
 /* ############################################## bo's Info ############################################## */
 
 .aboutPage{
-  background-color: #c5be91;
+  background-color: #F2F8F8;
   position: relative;
 }
 .aboutContainer{
@@ -219,7 +219,7 @@ vertical-align: top;
   margin-left: 20px;
   margin-right: 20px; 
   background-color: #00000000;
-  color: #2e2d2d;
+  color: #888787;
   text-align: justify;
   width: 400px;
   position: relative;
@@ -247,7 +247,7 @@ vertical-align: top;
 
 strong{
   background: #00000000;
-  color: #bb0505;
+  color: #417FB6;
   font-weight: bold;
 }
 
@@ -295,7 +295,7 @@ strong{
 /* ############################################## Experience page ############################################## */
 
 .boExperienceContainer{
-  background-color: #c7bf88;
+  background-color: rgb(201, 201, 201);
   min-height: 100vh;
 }
 
@@ -310,7 +310,7 @@ strong{
 
 .boExperienceHeader{
   background-color: #00000000;
-  color:#2e2d2d1e;
+  color:#8FD1F4;
   font-size: 52pt;
   font-weight: bolder;
   position: relative;
@@ -360,7 +360,7 @@ strong{
 }
 
 .experienceBlock .timeline{
-  color: #c5be91;
+  color: #F2F8F8;
   margin-left: auto;
   font-size: 10pt;
   border-radius: 10px;
@@ -384,15 +384,20 @@ font-size: 10pt;
 
 .experienceBlock p{
 background-color: #00000000;
-color: #2e2d2d;
+color: #888787;
 text-align: justify;
 }
 
 
 /* ############################################## Work I did ############################################## */
 .workContainer{
-  background-color: #c5be91;
+  background-color: #F2F8F8;
   min-height: 100vh;
+}
+.workblockContainer{
+  background-color: #F2F8F8;
+  max-width: 900px;
+  margin: auto;
 }
 .workBlock{
   background-color: #00000000;
@@ -449,7 +454,7 @@ text-align: justify;
 
 .workContainer p{
   background-color: #00000000;
-  color: #2e2d2d;
+  color: #888787;
   text-align: justify;
 }
 .workContainer .media{

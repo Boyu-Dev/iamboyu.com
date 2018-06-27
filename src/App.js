@@ -132,10 +132,9 @@ class App extends Component {
 
               <div id="aboutMe" className="aboutPage">
                 <div className="aboutContainer">
+                  <div className="boExperienceHeader"> About</div>
+                  <div className="boExperienceFill"></div>
                 <div className="AboutIntro-text">
-                  <div className="aboutBackdrop">
-                    About
-                  </div>
                   <h>Me</h>
                   I am Bo Yu, a 24-year-old Canadian 
                   <strong> UX Engineer and Software Developer. </strong>
@@ -186,7 +185,7 @@ class App extends Component {
                     </div>
 
                     <div className="skill-App a9">
-                      <img src="img/mdb_icon.svg" alt="mdb"/>
+                      <img src="img/jquery_icon.svg" alt="jQuery"/>
                     </div>
 
                     <div className="skill-App a10">
@@ -303,6 +302,7 @@ class App extends Component {
                   </div>
 
                 <div id="projects" className="workContainer">
+                <div className="workblockContainer">
                   <div className="boExperienceHeader">Fun Projects</div>
                   <div className="boExperienceFill"></div>
 
@@ -367,7 +367,7 @@ class App extends Component {
                       <img className="wlgif" src="img/wordlounge_animation.gif" atl="word lounge"/>
                     </div>
                   </div>
-
+                  </div>
                 </div>
           
             <div className="getInTouchSticky" type="button" value="CONTACT" onClick={()=> window.open("https://www.linkedin.com/in/bo-yu-09091514b/", "_blank")}>
