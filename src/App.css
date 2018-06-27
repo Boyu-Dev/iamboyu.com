@@ -170,7 +170,7 @@
   top: 0;
   right: 0;
   border: 2px solid #2e2d2d; 
-  background-color:rgba(197, 190, 145, 0.5);
+  background-color:#F2F8F899;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s ease;
   width: 110px;
@@ -209,15 +209,20 @@ vertical-align: top;
 .aboutPage{
   background-color: #F2F8F8;
   position: relative;
+  height: 100vh;
 }
 .aboutContainer{
   background-color: #00000000;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .AboutIntro-text{
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px; 
+  margin-left: 40px;
+  margin-right: 40px; 
   background-color: #00000000;
   color: #888787;
   text-align: justify;
@@ -243,11 +248,12 @@ vertical-align: top;
   font-size: 20pt;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #2e2d2d;
 }
 
 strong{
   background: #00000000;
-  color: #417FB6;
+  color: rgb(0, 195, 255);
   font-weight: bold;
 }
 
@@ -257,8 +263,8 @@ strong{
   width: 400px;
   position: relative;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px; 
+  margin-left: 40px;
+  margin-right: 40px; 
 }
 
 .About-skills h{
@@ -274,9 +280,9 @@ strong{
 
 .skill-App{
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px; 
-  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px; 
+  margin-bottom: 10px;
   width: 60px;
   height: 60px;
   background-color: #00000000;
@@ -295,8 +301,10 @@ strong{
 /* ############################################## Experience page ############################################## */
 
 .boExperienceContainer{
-  background-color: rgb(201, 201, 201);
+  background-color: #2e2d2d;
   min-height: 100vh;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 
 .boExperience{
@@ -310,22 +318,24 @@ strong{
 
 .boExperienceHeader{
   background-color: #00000000;
-  color:#8FD1F4;
+  color:rgb(0, 195, 255);
   font-size: 52pt;
   font-weight: bolder;
   position: relative;
-  width: 400px;
+  width: 500px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px; 
   text-align: left;
   vertical-align: top;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 .boExperienceFill{
   background-color: #00000000;
   position: relative;
-  width: 400px;
+  width: 350px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
@@ -339,18 +349,19 @@ strong{
   display: inline-block;
   width: 400px;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px; 
+  margin-left: 40px;
+  margin-right: 40px; 
   vertical-align: top;
 }
 .experienceBlock .title{
   background-color: #00000000;
-  color: #2e2d2d;
+  color: #F2F8F8;
   text-align: left;
   font-size: 20pt;
   font-weight: bold;
   display: inline-block;
   width: 300px;
+
 }
 
 .experienceBlock .timelineContainer{
@@ -376,7 +387,7 @@ strong{
 
 .experienceBlock .location{
 background-color: #00000000;
-color: #2e2d2d;
+color: #F2F8F8;
 text-align: left;
 font-style: italic;
 font-size: 10pt;
@@ -393,10 +404,12 @@ text-align: justify;
 .workContainer{
   background-color: #F2F8F8;
   min-height: 100vh;
+  padding-bottom: 5em;
+  padding-top: 5em;
 }
 .workblockContainer{
-  background-color: #F2F8F8;
-  max-width: 900px;
+  background-color: #00000000;
+  max-width: 1000px;
   margin: auto;
 }
 .workBlock{
@@ -405,8 +418,8 @@ text-align: justify;
   display: inline-block;
   width: 400px;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px; 
+  margin-left: 40px;
+  margin-right: 40px; 
   vertical-align: top;
 }
 .workContainer .title{
