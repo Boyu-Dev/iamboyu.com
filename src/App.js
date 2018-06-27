@@ -142,7 +142,7 @@ class App extends Component {
                   <strong> UX Engineer and Software Developer. </strong>
                     I love making things that people interact with and 
                   I am always learning something new 
-                  <strong> (I am currently learning about UX in games). </strong>
+                  <strong> (I am currently learning about game user research). </strong>
                   I like to <strong> overcome </strong> design challenges,
                   <strong> create </strong> intelligent user experiences and software
                   with strong integrity. 
