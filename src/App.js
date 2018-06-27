@@ -246,7 +246,7 @@ class App extends Component {
                     <div className="experienceBlock">
                       <div className="title">Teaching Assistant</div>
                       <div className="timelineContainer">
-                        <div className="timeline current">Present 2mos</div>
+                        <div className="timeline current">Present 10mos</div>
                       </div>
                       <div className="location">University of Ontario Institute of Technology, Oshawa</div>
                       <p>
@@ -258,7 +258,7 @@ class App extends Component {
                     </div>
 
                     <div className="experienceBlock">
-                      <div className="title">UX Engineer</div>
+                      <div className="title">Lead UX Engineer</div>
                       <div className="timelineContainer">
                         <div className="timeline current">Present 2.8yrs</div>
                       </div>
@@ -273,33 +273,50 @@ class App extends Component {
                     </div>
 
                     <div className="experienceBlock">
-                      <div className="title">Content Developer</div>
-                      <div className="timelineContainer">
-                        <div className="timeline previous">2015.09 2.4yrs</div>
-                      </div>
-                      <div className="location">University of Ontario Institute of Technology, Oshawa</div>
-                      <p>
-                      I was responsible for designing and writing introductory programming materials for students new to game development, 
-                      focused on improving student’s learning experience and the material's practicality. Our team also
-                      introduced game centric objectives to help students better understand how they can relate their programming knowledge 
-                      in the context of games development.
-                      </p>
-                    </div>
-
-                    <div className="experienceBlock">
                       <div className="title">UX Engineer</div>
                       <div className="timelineContainer">
-                        <div className="timeline previous">2014.09 1yr</div>
+                        <div className="timeline previous">2015.03 6mos</div>
                       </div>
                       <div className="location">Lingly Language Systems, Toronto</div>
                       <p>
-                      I joined Lingly to lead the design and development of their web and mobile's user experience.
+                      I joined Lingly to help design and develope their web and mobile's user experience.
                       Standardized the studio’s UI principles, identity, development process, quality control and testing pipeline.
                       After a successful launch, we received excellent reviews and approval from our international users. Lingly 
                       was quickly acquired by an investor shortly after.
                       </p>
                     </div>
 
+                    <div className="experienceBlock">
+                      <div className="title">Web Developer</div>
+                      <div className="timelineContainer">
+                        <div className="timeline previous">2014.05 10mos</div>
+                      </div>
+                      <div className="location">Aloud Creative, Toronto</div>
+                      <p>
+                      As a web developer I have Designed concept models, sitemaps, process flows, wireframes,
+                      prototypes and preformed heuristic reviews. Once a final designs was approved, I will
+                      develope the project using React and React native.
+                      I would also design, directed user research sessions, analyze and reported research data to stack-holders.
+                      </p>
+                    </div>
+
+                    <div className="experienceBlock">
+                      <div className="title">Freelance Web Developer</div>
+                      <div className="timelineContainer">
+                        <div className="timeline previous">2012.07 1.8years</div>
+                      </div>
+                      <div className="location">Icebird Studio, Toronto</div>
+                      <p>
+                      As a freelance web developer, I prepared and presented project proposal to clients and 
+                      designed website wireframes and mockups.
+                      Once a contracted is established, I built sophisticated interfaces using HTML, CSS,
+                      Bootstrap, JavaScript and jQuery. Depending on client needs I also configured and set
+                      up new WordPress instances, installed themes, plugins and according to client’s needs.
+                      Once a project is finished, I would maintain continuous customer support, 
+                      project maintenance and updates based on client feedback.
+                      </p>
+                    </div>
+                    <div className="boExperienceFill"> </div>
                     </div>
                   </div>
 
