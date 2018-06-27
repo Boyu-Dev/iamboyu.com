@@ -139,7 +139,7 @@ class App extends Component {
                 <div className="AboutIntro-text">
                   <h>Me</h>
                   I am Bo Yu, a 24-year-old Canadian 
-                  <strong> UX Engineer and web Developer. </strong>
+                  <strong> UX Engineer and Web Developer. </strong>
                     I love making things that people interact with and 
                   I am always learning something new 
                   <strong> (I am currently learning about game user research). </strong>
