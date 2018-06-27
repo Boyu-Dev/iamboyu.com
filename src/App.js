@@ -246,7 +246,7 @@ class App extends Component {
                     <div className="experienceBlock">
                       <div className="title">Teaching Assistant</div>
                       <div className="timelineContainer">
-                        <div className="timeline current">Present 10mos</div>
+                        <div className="timeline current">Present 2mos</div>
                       </div>
                       <div className="location">University of Ontario Institute of Technology, Oshawa</div>
                       <p>
